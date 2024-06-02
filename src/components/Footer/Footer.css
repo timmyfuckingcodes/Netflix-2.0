@@ -1,0 +1,28 @@
+.footer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 100px;
+   flex-direction: column;
+}
+.footer-icons{
+display: flex;
+gap: 20px;
+max-width: 112px;
+}
+.footer-paragraphs{
+    margin-top: 20px;
+    font-weight: 400; 
+    color: #9095A0FF;
+    font-family: Rubik; /* Body */
+     font-size: 20px
+}
+.footer-options{
+display: flex;
+gap: 15px;
+padding-top: 20px;
+font-weight: 400; 
+color: #9095A0FF; 
+font-family: Rubik; /* Body */
+padding-bottom: 10px;
+}

@@ -1,0 +1,69 @@
+.MovieListing-container{
+    background-image:linear-gradient(90deg,rgba(12, 12, 12, 0.637),rgba(12, 12, 12, 0.637)), url('../../assets/Image 52.png');
+    height: 150vh;
+    object-fit: cover;
+}
+.MovieListing-Header{
+    width: 800px;
+    text-align: center;
+    font-family: 'Maven Pro';
+    font-weight: 600; 
+  color: #FFFFFFE6;
+  font-size: 3rem; 
+}
+.Movie-LIST{
+    background-color: black;
+}
+.MovieHeader-container{
+    margin-top: 70px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Movie-Search {
+    margin-top: 50px;
+    width: 800px; 
+    height: 52px; 
+    padding-left: 52px; 
+    padding-right: 20px; 
+    font-family: Rubik; 
+    font-size: 18px; 
+    font-weight: 400; 
+    background: #3A3A3AFF; 
+    border-radius: 26px; 
+    border-width: 1px; 
+    border-color: #FFFFFFFF; /* white */
+    outline: none; 
+  }
+
+  .search-Icon{
+    width: 24px; 
+    height: 24px; 
+    fill: #191919FF;
+  
+  }
+  
+  /* hover */
+  .search-Icon:hover {
+    color: #9C9C9CFF; 
+    background: #3A3A3AFF; 
+    border-color: #CACACAFF; 
+  }
+  /* focused */
+   .Movie-Search:hover {
+    color: #9C9C9CFF; 
+    background: #FFFFFFFF; /* white */
+    border-color: #FFFFFFFF; /* white */
+  }
+  /* disabled */
+  .Movie-Search:disabled {
+    color: #9C9C9CFF; 
+    background: #3A3A3AFF; 
+    border-color: #FFFFFFFF; /* white */
+  }
+  .Movie-Search:disabled + .icon, .Movie-Search:disabled + .icon + .icon {
+    fill: #191919FF; 
+  }
+ 

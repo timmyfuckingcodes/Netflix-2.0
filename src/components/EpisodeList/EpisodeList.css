@@ -1,0 +1,19 @@
+.MovieList-container{
+    padding-left: 50px;
+    margin-top: 20px;
+    background-color: black;
+}
+.MovieList-Title{
+    font-family: 'Maven Pro';
+    font-weight: 600; 
+    color: #FFFFFFFF; 
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.Episode-List{
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+
+}
+

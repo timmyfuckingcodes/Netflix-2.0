@@ -1,0 +1,20 @@
+.movieImage{
+    border-radius: 8px;
+    border: 1px solid black;  
+    width: 288px;
+    height: 390px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.RatedMovieTitle{
+    color: #9095A080;
+    font-family: Maven Pro;
+    font-size: 84px;
+    font-weight: 700;
+}
+.RatedMovie-name{
+font-family: 'Maven Pro';
+        font-weight: 600; 
+        color: #FFFFFFFF; 
+        font-size: 20px;
+}

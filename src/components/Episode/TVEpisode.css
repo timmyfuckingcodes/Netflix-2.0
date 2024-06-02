@@ -1,0 +1,58 @@
+.episode-container{
+    width: 251px; 
+    height: 326px; 
+    background: #1D2128FF; /* neutral-800 */
+    border-radius: 6px; /* border-m */
+    box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f; /* shadow-xs */
+    padding-left:15px;
+    padding-top: 15px;
+}
+.episode-number{
+    font-size: 14px;  
+    font-weight: 400; 
+    color: #9095A0FF
+}
+.episode-header{
+  font-family: Rubik; /* Body */
+  font-size: 18px; 
+  line-height: 28px; 
+  font-weight: 700; 
+  color: #FFFFFFFF;
+  margin-top: 20px;
+}
+.episode-info{
+    font-family: Rubik; /* Body */
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  color: whitesmoke;
+  margin-top: 20px;
+}
+.episode-tag{
+    margin-top: 20px;
+        height: 24px; 
+        padding-left: 6px; 
+        padding-right: 6px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        border-radius: 12px; 
+        border-width: 1px; 
+        border-style: solid; 
+        font-family: Rubik; 
+       font-size: 11px; 
+        font-weight: 400; 
+        color: #6E7787FF; /* neutral-550 */
+        background: #00000000; /* transparent */
+        border-color: #6E7787FF; /* neutral-550 */
+}
+ .episode-tag:hover:active{
+    color:red /* neutral-650 */;
+    background-color: #00000000; /* transparent */
+    border-color: #424955FF; /* neutral-650 */
+}
+.episode-tag:disabled {
+        color: #6E7787FF; /* neutral-550 */
+        background: #00000000; /* transparent */
+        border-color: #6E7787FF; /* neutral-550 */
+      }

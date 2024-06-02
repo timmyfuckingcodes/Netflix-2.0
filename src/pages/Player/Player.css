@@ -1,0 +1,24 @@
+.player{
+    height: 100vh;
+}
+.player-icon{
+    font-size: 50px;
+    padding: 20px;
+}
+player-container{
+    height:100vh;
+}
+.player-wrapper{
+    display: flex;
+    height: 90vh;
+}
+.player-video{
+    margin-top: 20px;
+}
+.player-info{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    max-width: 90%;
+    margin-left: 90px;
+}

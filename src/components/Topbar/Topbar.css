@@ -1,0 +1,63 @@
+.Topbar-container{
+    width: 100%;
+    height: 30px;
+}
+.Topbar-containerWrapper{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 50px;
+}
+
+.Logo-text{
+    font-family: 'Maven Pro';
+    font-weight: 900;
+    font-size: 30px;
+}
+/* Group 7 */
+.Profile-Image{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.TopbarFirst-Icons{
+    display: flex;
+    align-items: center;
+}
+.Logo-container{
+    margin-right: 50px;
+}
+
+.RightLinkIcons{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.icons{
+    font-family: 'Rubik';
+}
+
+
+.TopbarLeftMenu{
+    display: flex;
+    align-items: center;
+}
+.LeftIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+   .RightLinkIcons{
+    display: none;
+   } 
+ 
+}
+@media screen and (max-width: 500px) {
+  .Logo-image{
+    display: none;
+  }
+ }

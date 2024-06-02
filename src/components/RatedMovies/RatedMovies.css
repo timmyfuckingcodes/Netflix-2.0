@@ -1,0 +1,22 @@
+.Ratedmovie-Container{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.RatedmovieList-Title{
+    font-family: 'Maven Pro';
+    font-weight: 600; 
+    color: #FFFFFFFF; 
+    font-size: 20px;
+
+}
+.Movie-List{
+display: flex;
+gap: 20px;
+overflow: scroll;
+ scrollbar-width: none;
+ overflow-x: auto;
+ flex-wrap: nowrap;
+ }
+ .rated_Movies{
+    text-decoration: none;
+ }
