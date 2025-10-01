@@ -1,0 +1,46 @@
+.SigninContainer{
+  margin: 0;
+/* padding-top: 50px; */
+  background:#171A1FE6 ;
+overflow:hidden
+    }
+    .SignInImage{
+        position: fixed; 
+        top: 0px; 
+        left: 0px; 
+        width: 100vw; 
+        height: 100vh; 
+        object-fit: cover;
+        border-radius: 0px; 
+        overflow: hidden;
+        background:#171A1FE6 
+    }
+    .overlay {
+        position:fixed ; 
+        top: 0px; 
+        left: 0px; 
+        width: 1440px; 
+        height: 900px; 
+       /* neutral-900 */
+       background: #171A1FE6; 
+        border-radius: 0px;  
+        }
+    /* .Image-Top{
+        position: absolute; 
+        top: -89px; 
+        left: -35px; 
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 0px; 
+        background:#171A1FE6 
+    } */
+.Image-Top{
+    position: fixed; 
+    top: -89px; 
+    left: -35px; 
+} 
+
+::-webkit-scrollbar{
+    display: none;
+}
+

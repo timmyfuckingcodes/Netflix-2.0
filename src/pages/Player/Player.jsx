@@ -1,11 +1,15 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect,useState,} from 'react'
 import './Player.css'
 import { FaRegArrowAltCircleLeft } from 'react-icons/fa'
 import {useParams,useNavigate} from 'react-router-dom'
+
 export default function Player(props) {
-const {id} = useParams();
+const {type,id} = useParams();
 const navigate = useNavigate();
 const [Data,setData] = useState([]);
+
+
+console.log(id);
  useEffect(()=>{
     const options = {
         method: 'GET',
@@ -15,9 +19,9 @@ const [Data,setData] = useState([]);
         }
       };
       
-      fetch(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`, options)
+      fetch(`https://api.themoviedb.org/3/${type}/${id}/videos?language=en-US`, options)
         .then(response => response.json())
-        .then(response => setData(response.results[5]))
+        .then(response => setData(response.results[0]))
         .catch(err => console.error(err));
  },[])
  

@@ -16,10 +16,13 @@
     color: #FFFFFFE6;
     font-size: 3rem; 
 }
-.search-Icon{
+.search-Icons{
     width: 24px; 
     height: 24px; 
     fill: #191919FF;
+    position: absolute;
+    top: 315px;
+    left: 245px;
   
   }
   

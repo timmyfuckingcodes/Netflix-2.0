@@ -20,12 +20,10 @@ export default function Episode() {
       <button className='button-two'>More-Info</button>
      </div>
     </div>
-      <div>
+      <div className='EpisodeList'>
       <EpisodeList title="Episodes" others="More like this"/>
-    <div className='footer'>
-       <Footer/>   
-      </div>  
-    </div>
+     </div>
+  
    </div> 
   </div>
   )

@@ -28,7 +28,7 @@ useEffect(()=>{
       <h1 className='MovieList-Title'>{props.title}</h1>
       <div className='Movie-List'  >
        {movieData.map((movie,index)=>{
-       return <Link to={`/player/${movie.id}`} className='movie-Link'>
+       return <Link to={`/player/${props.type}/${movie.id}`} className='movie-Link' >
         <Movie MouseEnter={()=>sethover((e)=>!e)} MouseLeave ={()=>sethover((e)=>!e)} image={`https://image.tmdb.org/t/p/w500/`+ movie.backdrop_path} key={index} title={props.type == "movie" ? movie.original_title : movie.original_name } alt=""/> 
              </Link>
        })} 

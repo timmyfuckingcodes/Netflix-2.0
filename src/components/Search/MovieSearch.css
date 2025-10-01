@@ -1,0 +1,9 @@
+.search-container{
+    flex: 4;
+    
+}
+.movie-card-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}

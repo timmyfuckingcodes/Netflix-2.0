@@ -94,3 +94,17 @@
     margin-top: 10px;
   }
   }
+  .TopIconBadge{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

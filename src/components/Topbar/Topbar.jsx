@@ -3,6 +3,7 @@ import './Topbar.css';
 import { BiSearchAlt } from "react-icons/bi";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import {Link} from 'react-router-dom';
+import Image from '../../assets/Image 21.png';
 import MovieListing from '../../pages/Movie-Listing/MovieListing';
 export default function Topbar() {
   return (
@@ -10,27 +11,35 @@ export default function Topbar() {
 <div className='Topbar-containerWrapper'>
      <div className='TopbarFirst-Icons'>
         <div className='Logo-container'>
-         <img src='../../assets/Image 21.png' className='Logo-image'/> 
+         <img src={Image}className='Logo-image'/> 
          <span className='Logo-text'>PLAYCINE</span>  
         </div>
         
      <ul className='RightLinkIcons'>
-     <Link to={'/'}>
+     <Link className='routerlink' to={'/'}>
         <li className='icons'>Home</li>
       </Link>  
-      <Link to={'/movies'}>  
+      <Link className='routerlink' to={'/movies'}>  
          <li className='icons'>Movie</li> 
         </Link>
-      <Link to={'/tv'}>
+      <Link className='routerlink' to={'/tv'}>
        <li className='icons'>Tv Shows</li>
       </Link>
-       
-        <li className='icons'>Browse by language</li>
-     </ul>
+       <Link className='routerlink' to={'/search'}>
+         <li className='icons'>Browse by language</li>
+       </Link>
+      </ul>
     </div>
     <div className='TopbarLeftMenu'>
-     <BiSearchAlt className='LeftIcon'/>
-     <IoIosNotificationsOutline className='LeftIcon'/>
+      <Link className='searchlink' to={'/search'}>
+      <BiSearchAlt className='LeftIcon'/>
+      </Link>
+   
+     <div>
+     <IoIosNotificationsOutline className='LeftIcon'/> 
+     <span className='TopIconBadge'>2</span>
+      </div>
+     
      <img src='' alt='' className='Profile-Image'/>
     </div>
         </div>

@@ -1,8 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState} from 'react'
 import './RatedMovies.css'
 import RatedMovie from '../RatedMovie/RatedMovie'
 import {Link} from 'react-router-dom'
+
+
+
+
 export default function RatedMovies(props) {
+
 
 const [TrendingMovies,SetTrendingMovies] = useState([]);
 useEffect(()=>{
@@ -27,8 +32,8 @@ useEffect(()=>{
        <h1 className='RatedmovieList-Title'>{props.title}</h1>
        <div className='Movie-List'>
        {TrendingMovies.map((movie,index)=>{
-        return <Link  className="rated_Movies" to={`/player/${movie.id}`}>
-        <RatedMovie Index={index + 1} Image={`https://image.tmdb.org/t/p/w500/${props.type == "person" ? movie.profile_path :  movie.backdrop_path }`} name={`${props.type == "person" || movie.media_type == "tv" ? movie.original_name : movie.original_title}`} type={"movie"} />
+        return <Link  className="rated_Movies" to={`/player/${props.type=='all'? movie.media_type: props.type}/${movie.id}`}>
+        <RatedMovie Index={index + 1} Image={`https://image.tmdb.org/t/p/w500/${props.type == "person" ? movie.profile_path :  movie.backdrop_path }`} name={`${props.type == "person" || movie.media_type == "tv" ? movie.name : movie.original_title}`} type={"movie"} />
         </Link> 
        })}
 

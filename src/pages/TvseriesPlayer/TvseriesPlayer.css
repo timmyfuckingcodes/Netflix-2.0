@@ -7,7 +7,6 @@
 }
 player-container{
     height:100vh;
-    position: fixed;
 }
 .player-wrapper{
     display: flex;
