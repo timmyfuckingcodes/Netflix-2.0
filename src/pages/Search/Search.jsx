@@ -9,8 +9,10 @@ const Search = () => {
     <Topbar/>
       <div className='search-container'>
       <Sidebar/>
+      <div className='movie-searchcontainer'>
       <MovieSearch/>
-    </div>
+      </div>
+   </div>
     </>
   
   )

@@ -1,5 +1,12 @@
 .search-container{
     display: flex;
     margin-top: 20px;
-    padding
+     
+}
+
+
+
+.movie-searchcontainer{
+    flex:4;
+    margin-top: 20px;
 }
